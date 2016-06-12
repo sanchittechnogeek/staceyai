@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Stacey.ai</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+    <center><div class="container" id="nickname-container">
+    <br>    <br><br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br><br><br>
+
+        <h1>Enter your fullname!</h1>
+        <span id="nick-error"></span>
+        <form id="choose-nickname">
+            <input type="text" id="nickname"></input>
+        </form>
+    </div>
+    </center>
+
+    <div class="container" id="chat-container">
+
+        <div class="row">
+            <div id="users" class="col-md-4" >
+                <h2>Active Users</h2>
+            </div>
+
+            <div class="clearfix visible-xs"></div>
+
+            <div class="col-md-4" id="chat-col">
+
+                <!-- lobby name or heading-->         
+                <div class="row" id="room"><h2>Chatroom</h2></div>
+
+                <!-- main chat lobby-->
+                <div class="row" id="chat">
+                </div>
+
+                <!-- input text field-->
+                <div class="row">
+                    <form id="send-message">
+                        <input type="text" id="new-message" autocomplete="off"></input>
+                    </form>
+                </div>
+            </div>
+
+                <!-- Personal message (activated when user click's on other persons name) -->
+            <div class="col-md-4" id="pm-col">
+
+               <!-- User's name is showing here-->
+                <div class="row" id="user-to-pm">
+                </div>
+
+                <!-- private chat lobby-->
+                <div class="row" id="private-chat">
+                </div>
+                
+                <!-- Private chat input field-->
+                <div class="row">
+                    <form id="send-pm">
+                        <input type="text" id="new-pm" autocomplete="off"></input>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/user_interface.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stacey.ai | Your Personal Medical assistant</title>
+    <script src="/js/talk.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/form.css">
+  </head>
+  <body>
+    <center><h1>Talk to Stacey.ai</h1></center>
+    <center><form id="talk" class="boxedin" onsubmit="return false;">
+      <b>You say:</b> <input id="yousay" name="input" size="90" onkeydown="if (event.keyCode == 13) { doTalk(); }"/></center>
+      
+<center><input id="talkbutton" type="button" value="talk" onclick="doTalk()"/></center>
+    </form>
+    <p id="response"></p>
+  </body>
+</html>

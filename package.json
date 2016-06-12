@@ -1,0 +1,14 @@
+{
+  "name": "Stacey.ai",
+  "version": "1.0.0",
+  "description": "Your Personal A.I powered Medical Assistant",
+  "dependencies": {
+    "bson": "~0.2.22",
+    "express": "~3.4.8",
+    "jquery-smooth-scroll": "^1.7.2",
+    "mongoose": "~3.8.6",
+    "socket.io": "~0.9.16"
+  },
+  "author": "Team A.I. Pirates",
+  "license": "MIT"
+}
